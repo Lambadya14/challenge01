@@ -1,5 +1,4 @@
-html,
-body {
+* {
   margin: 0;
   padding: 0;
 }
@@ -20,13 +19,14 @@ body {
   align-items: center;
 }
 .Ms {
-  margin: 50px auto;
+  /* margin: 50px auto; */
   display: grid;
   grid-template-columns: repeat(auto-fit, 1fr);
   grid-template-areas: "ms1" "ms2";
 }
 .reg {
   background-color: #5cb85f;
+  border-radius: 4px;
 }
 .ms1 button {
   background-color: #5cb85f;
@@ -37,13 +37,6 @@ body {
   align-items: end;
   justify-content: right;
 }
-.design {
-  display: flex;
-  background-color: blue;
-  border-top-left-radius: 75px;
-  height: 205px;
-  width: 530px;
-}
 .os {
   grid-template-areas: "os1" "os2";
   margin: 50px auto;
@@ -51,7 +44,7 @@ body {
   grid-template-columns: repeat(auto-fit, 1fr);
   justify-content: center;
 }
-ul > .list-unstyled {
+li.list-unstyled {
   margin-left: -31px;
 }
 .wu {
@@ -59,17 +52,14 @@ ul > .list-unstyled {
   margin: 50px auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, 1fr);
-  justify-content: left;
+  justify-content: space-around;
 }
 .w2 {
-  grid-template-columns: repeat(auto-fit, 1fr);
   grid-template-areas: "w21" "w22" "w23" "w24";
   margin: auto;
   display: grid;
-  justify-content: left;
-  align-items: start;
-  column-gap: 10px;
-  row-gap: 10px;
+  column-gap: 20px;
+  row-gap: 20px;
 }
 .w21,
 .w22,
@@ -77,8 +67,9 @@ ul > .list-unstyled {
 .w24 {
   border-radius: 10px;
   padding: 20px;
-  border: 1px solid black;
-  gap: 5em;
+  border: 1px solid #e5ebec;
+  width: 268px;
+  height: 196px;
 }
 .w1 {
   text-align: center;
@@ -159,7 +150,16 @@ ul > .list-unstyled {
   gap: 5px;
   display: grid;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
+  .w21,
+  .w22,
+  .w23,
+  .w24 {
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (min-width: 767px) {
   .w2 {
     display: grid;
     grid-template-areas: "w21 w22" "w23 w24";
