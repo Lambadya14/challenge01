@@ -1,9 +1,14 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+}
+html {
+  scroll-padding-top: 70px;
 }
 .bg {
   background-color: #f1f3ff;
+  padding-top: 65px;
 }
 @media (min-width: 992px) {
   .navbar-expand-lg .offcanvas .offcanvas-body {
@@ -14,6 +19,9 @@
     justify-content: flex-end;
   }
 }
+nav {
+  background-color: #f1f3ff;
+}
 .navbar > .container {
   display: flex;
   align-items: center;
@@ -21,7 +29,6 @@
 .Ms {
   /* margin: 50px auto; */
   display: grid;
-  grid-template-columns: repeat(auto-fit, 1fr);
   grid-template-areas: "ms1" "ms2";
 }
 .reg {
@@ -41,9 +48,9 @@
   grid-template-areas: "os1" "os2";
   margin: 50px auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 1fr);
   justify-content: center;
 }
+
 li.list-unstyled {
   margin-left: -31px;
 }
@@ -51,7 +58,6 @@ li.list-unstyled {
   grid-template-areas: "w1" "w2";
   margin: 50px auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 1fr);
   justify-content: space-around;
 }
 .w2 {
@@ -76,6 +82,8 @@ li.list-unstyled {
 }
 .tes {
   margin: 50px auto;
+  width: auto;
+
 }
 .s {
   display: grid;
@@ -88,7 +96,6 @@ li.list-unstyled {
 }
 .s2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 1fr);
   justify-content: center;
 }
 .s2 p {
@@ -129,7 +136,6 @@ li.list-unstyled {
   display: grid;
 }
 .ft {
-  grid-template-columns: repeat(auto-fit, 1fr);
   grid-template-areas: "ft1" "ft2" "ft3" "ft4";
   margin: 50px auto;
   display: grid;
@@ -201,5 +207,11 @@ li.list-unstyled {
   .image {
     justify-content: left;
     display: flex;
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  .tes{
+    width: 1440px;
   }
 }
